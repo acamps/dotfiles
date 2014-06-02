@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/ps_acamps/Documents/Private/code'
+let g:netrw_dirhist_2='/Users/ps_acamps/Documents'
+let g:netrw_dirhist_3='/Users/ps_acamps/Documents/Private/pos'
+let g:netrw_dirhist_4='/Users/ps_acamps/Documents/Private/pos/pos.js'
+let g:netrw_dirhist_5='/Users/ps_acamps/Documents/Private/pos/pos.js/node_modules'
+let g:netrw_dirhist_6='/Users/ps_acamps/Documents'
+let g:netrw_dirhist_7='/Users/ps_acamps/Documents/Private/pos/pos.js/public'
+let g:netrw_dirhist_8='/Users/ps_acamps/Documents/Private/pos/pos.js/public/modules'
+let g:netrw_dirhist_9='/Users/ps_acamps/Documents/Private/pos/pos.js'

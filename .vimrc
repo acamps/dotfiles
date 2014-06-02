@@ -31,3 +31,22 @@ let wiki_3 = {}
 let wiki_3.path = '~/projects_wiki/'
 
 let g:vimwiki_list = [wiki_1, wiki_2, wiki_3]
+
+" {{{ KEY MAPPINGS
+nmap ¡ <Plug>VimwikiVSplitLink
+" }}}
+
+let laststatus=2
+"let g:airline#extensions#bufferline#enabled = 1
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
+set encoding=utf-8  " The encoding displayed.
+set fileencoding=utf-8  " The encoding written to file.
+
+set backspace=indent,eol,start " makes vim able to delete end of line character, behaving like other editors.
+
+" FOLDING config
+set foldmethod=expr
+let g:vimwiki_folding = 'list' 
