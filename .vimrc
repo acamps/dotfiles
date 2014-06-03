@@ -50,3 +50,13 @@ set backspace=indent,eol,start " makes vim able to delete end of line character,
 " FOLDING config
 set foldmethod=expr
 let g:vimwiki_folding = 'list' 
+
+set history=500
+
+" tab navigation like firefox
+nnoremap <C-S-tab> :tabprevious<CR>
+nnoremap <C-tab>   :tabnext<CR>
+nnoremap <C-t>     :tabnew<CR>
+inoremap <C-S-tab> <Esc>:tabprevious<CR>i
+inoremap <C-tab>   <Esc>:tabnext<CR>i
+inoremap <C-t>     <Esc>:tabnew<CR>
