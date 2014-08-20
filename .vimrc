@@ -30,7 +30,10 @@ let wiki_2.path = '~/cooking/'
 let wiki_3 = {}
 let wiki_3.path = '~/projects_wiki/'
 
-let g:vimwiki_list = [wiki_1, wiki_2, wiki_3]
+let wiki_4 = {}
+let wiki_4.path = '~/people_wiki/'
+
+let g:vimwiki_list = [wiki_1, wiki_2, wiki_3, wiki_4]
 
 " {{{ KEY MAPPINGS
 nmap ¡ <Plug>VimwikiVSplitLink
@@ -68,3 +71,6 @@ nnoremap tt  :tabedit<Space>
 nnoremap tn  :tabnext<Space>
 nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
+
+autocmd BufWritePost *.wiki execute ":silent !Git add " . expand("%:p")
+
