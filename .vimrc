@@ -72,5 +72,6 @@ nnoremap tn  :tabnext<Space>
 nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
 
-autocmd BufWritePost *.wiki execute ":silent !Git add " . expand("%:p")
+autocmd BufWritePost *.wiki execute ":silent !Git add " . expand("%:p") 
 
+colorscheme github
