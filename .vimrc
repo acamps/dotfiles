@@ -39,8 +39,9 @@ let g:vimwiki_list = [wiki_1, wiki_2, wiki_3, wiki_4]
 nmap ¡ <Plug>VimwikiVSplitLink
 " }}}
 
-let laststatus=2
+set laststatus=2
 "let g:airline#extensions#bufferline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
