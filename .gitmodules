@@ -22,3 +22,9 @@
 [submodule ".vim/bundle/vim-github-colorscheme"]
 	path = .vim/bundle/vim-github-colorscheme
 	url = https://github.com/endel/vim-github-colorscheme.git
+[submodule ".vim/bundle/ultisnips"]
+	path = .vim/bundle/ultisnips
+	url = git@github.com:SirVer/ultisnips.git
+[submodule ".vim/bundle/vim-snippets"]
+	path = .vim/bundle/vim-snippets
+	url = git@github.com:honza/vim-snippets.git
