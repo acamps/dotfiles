@@ -1,13 +1,21 @@
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsListSnippets="<c-l>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsSnippetDirectories=["UltiSnips"]
+
 set nocompatible
 syntax on
-set number
 filetype plugin indent on
+set number
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
-set cursorline "or set cul
-set wildmenu "awesome autocomplete for normalmode
+set cursorline 
+"or set cul
+set wildmenu 
+"awesome autocomplete for normalmode
 "highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 "match OverLength /\%81v.\+/
 
@@ -39,8 +47,9 @@ let g:vimwiki_list = [wiki_1, wiki_2, wiki_3, wiki_4]
 nmap ¡ <Plug>VimwikiVSplitLink
 " }}}
 
-let laststatus=2
+set laststatus=2
 "let g:airline#extensions#bufferline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
