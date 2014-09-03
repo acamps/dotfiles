@@ -1,13 +1,21 @@
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsListSnippets="<c-l>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsSnippetDirectories=["UltiSnips"]
+
 set nocompatible
 syntax on
-set number
 filetype plugin indent on
+set number
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
-set cursorline "or set cul
-set wildmenu "awesome autocomplete for normalmode
+set cursorline 
+"or set cul
+set wildmenu 
+"awesome autocomplete for normalmode
 "highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 "match OverLength /\%81v.\+/
 
