@@ -87,4 +87,4 @@ nnoremap td  :tabclose<CR>
 
 autocmd BufWritePost *.wiki execute ":silent !Git add " . expand("%:p") 
 
-colorscheme github
+colorscheme industry
