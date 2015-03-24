@@ -4,6 +4,10 @@ let g:UltiSnipsListSnippets="<c-l>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
+"Make it work for crontab
+au BufEnter /private/tmp/crontab.* setl backupcopy=yes
+
+
 set nocompatible
 syntax on
 filetype plugin indent on
