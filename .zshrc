@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -42,13 +42,14 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx git-extras git-flow node npm rake symfony2 taskwarrior z vi-mode brew)
+plugins=(git osx git-extras git-flow node npm rake symfony2 taskwarrior z vi-mode brew zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
-export EDITOR=/bin/vim
+export EDITOR=/usr/local/bin/vim
+
 export SBT_OPTS="-Xmx2G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=2G -Xss2M  -Duser.timezone=GMT"
 
 
@@ -69,7 +70,10 @@ alias gpu='git pull'
 alias gcl='git clone'
 alias gta='git tag -a -m'
 alias gf='git reflog'
+alias diffable_files='git diff --name-only --diff-filter=ACMRTUXB origin/master...'
+
 
 alias pun='phpunit'
-
+export DEFAULT_USER=albertcamps
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+alias vw='cd $HOME/vimwiki'
