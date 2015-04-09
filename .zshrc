@@ -71,12 +71,15 @@ alias gpu='git pull'
 alias gcl='git clone'
 alias gta='git tag -a -m'
 alias gf='git reflog'
+alias diffable_files='git diff --name-only --diff-filter=ACMRTUXB origin/master...'
 alias glod='git log --oneline --decorate'
 alias gloda='git log --oneline --decorate --all'
 
-alias pun='phpunit'
 
+alias pun='phpunit'
+export DEFAULT_USER=albertcamps
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+alias vw='cd $HOME/vimwiki'
 alias rediss='redis-server /usr/local/etc/redis.conf'
 alias sayv="say -v 'Vicki'"
 
