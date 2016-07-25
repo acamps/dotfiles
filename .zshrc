@@ -84,7 +84,7 @@ alias rediss='redis-server /usr/local/etc/redis.conf'
 alias sayv="say -v 'Vicki'"
 
 export DEFAULT_USER=albertcamps
-***REMOVED***
+alias sshb='ssh acamps@sp-backoffice-01.laicosp.net'
 alias gaap='git add -A --patch'
 export PATH=${PATH}:$HOME/gsutil
 alias subl='/Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text'
